@@ -1,9 +1,9 @@
-# QA_Assignment
+## QA_Assignment
 
-#Part 1  - QA Automation
+## Part 1  - QA Automation
 
 ## Task 1
-### **Github API:**
+### Github API:
 This work is present here - QA_Assignment\QA_Assignment\Part-1 QA Automation\Task 1 - Github API automation
 
 I have created the scripts in java using rest assured and placed inside project named - Github_automation
@@ -30,6 +30,6 @@ Load Testing details and snapshots - contains the details and snapshots of the j
 
 
 
-#Part 2  -  Manual testing
+## Part 2  -  Manual testing
 
 Test cases with scenarios have been kept at - QA_Assignment\QA_Assignment\Part-2 Manual Testing\User Story Managing Report Templates.docx
