@@ -7,6 +7,9 @@
 This work is present here - QA_Assignment\QA_Assignment\Part-1 QA Automation\Task 1 - Github API automation
 
 I have created the scripts in java using rest assured and placed inside project named - Github_automation
+
+Task 1 - Github automation snapshots.docx - File has the snapshots of the execution.
+
 Also, tried to create the scripts using js. Kept it inside the Github_automation_using_PL.js file.
 
 
