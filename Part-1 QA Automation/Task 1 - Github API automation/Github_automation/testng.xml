@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--<suite name="All Test Suite" parallel="methods" thread-count="5">-->
+    <suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/JOB FIND 10 days study 28-6/RestAssured">
+        <classes><class name="Github_API_Automation">
+            <methods>
+                <include name="NoTokenProvided"/>
+                <include name="InvalidTokenProvided"/>
+                <include name="ForbiddcenTokenProvided"/>
+                <include name="GetUserValidUserToken"/>
+                <include name="UpdateUserBioWithValidUserToken"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>

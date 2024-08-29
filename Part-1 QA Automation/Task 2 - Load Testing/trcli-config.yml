@@ -1,0 +1,7 @@
+# trcli-config.yml
+
+  host: "https://rajatjuyal.testrail.io/"
+  username: "youremail@gmail.com"
+  password: your-testrail-password
+  api_key: "your-api-key"
+  project: "assignment-project"
