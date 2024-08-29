@@ -36,7 +36,7 @@ public class Github_API_Automation {
         try{
 
             RestAssured.baseURI="https://api.github.com";
-            Response response = given().header("Content-Type","application/json").header("Authorization","ghp_Dx4E8qAuos4J97PUC45vmh10s").log().all()
+            Response response = given().header("Content-Type","application/json").header("Authorization","invalid_token").log().all()
                     .get("/user");
             response.prettyPrint();
             Assert.assertEquals(response.statusCode(),401,"response status code is unexpected as"+response.statusCode());

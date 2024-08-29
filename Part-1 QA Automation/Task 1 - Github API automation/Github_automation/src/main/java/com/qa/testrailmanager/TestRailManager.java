@@ -12,8 +12,8 @@ import java.util.Map;
 public class TestRailManager {
 
     public static String TEST_RUN_ID = "18";
-    public static String TEST_RAIL_USERNAME = "learningtoreact@gmail.com";
-    public static String TEST_RAIL_PASSWORD = "Testrail12#";
+    public static String TEST_RAIL_USERNAME = "your_email";
+    public static String TEST_RAIL_PASSWORD = "your_password";
     public static String TEST_RAIL_ENGINE_URL = "https://rajatjuyal.testrail.io/";
     public static int TEST_RAIL_PASS_STATUS = 1;
     public static int TEST_RAIL_FAIL_STATUS = 5;
