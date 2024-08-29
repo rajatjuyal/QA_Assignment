@@ -4,7 +4,7 @@ test.describe("Success Story", async () => {
   test("Get User With Valid Token", async ({ request }) => {
     const response = await request.get("https://api.github.com/user", {
       headers: {
-        Authorization: "Bearer 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",
+        Authorization: "Bearer valid_token_here",
         "Content-Type": "application/json",
       },
     });
@@ -17,7 +17,7 @@ test.describe("Success Story", async () => {
   test("Update User Bio With Valid Token", async ({ request }) => {
     const response = await request.patch("https://api.github.com/user", {
       headers: {
-        Authorization: "Bearer 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",
+        Authorization: "Bearer valid_token_here",
         "Content-Type": "application/json",
       },
       body: { bio: "Your new bio content here." },
@@ -62,7 +62,7 @@ test.describe("Failure Test cases", async () => {
 
 
       headers: {
-        Authorization: "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",
+        Authorization: "toke_without_permission",
 
         "Content-Type": "application/json",
       },
@@ -71,5 +71,5 @@ test.describe("Failure Test cases", async () => {
     expect(response.status()).toEqual(403);
     const data = await response.json();
     console.log("data", data);
-  });
+});
 });
