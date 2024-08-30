@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="D:/JOB FIND 10 days study 28-6/RestAssured(failed)">
+    <classes>
+      <class name="Github_API_Automation">
+        <methods>
+          <include name="addResultsToTestRail"/>
+          <include name="ForbiddcenTokenProvided"/>
+        </methods>
+      </class> <!-- Github_API_Automation -->
+    </classes>
+  </test> <!-- D:/JOB FIND 10 days study 28-6/RestAssured(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

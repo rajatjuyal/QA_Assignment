@@ -52,7 +52,7 @@ public class Github_API_Automation {
 
             //To Do -- replace authorization token with a token of no privilege
             RestAssured.baseURI="https://api.github.com";
-            Response response = given().header("Content-Type","application/json").header("Authorization","token_with_no_permission").log().all()
+            Response response = given().header("Content-Type","application/json").header("Authorization","token_with_no_permissions").log().all()
                     .get("/user");
             response.prettyPrint();
             Assert.assertEquals(response.statusCode(),403,"response status code is unexpected as"+response.statusCode());
@@ -71,10 +71,10 @@ public class Github_API_Automation {
         testcaseid = "2266";
         try{
             RestAssured.baseURI="https://api.github.com";
-            Response response = given().header("Content-Type","application/json").header("Authorization","Bearer valid_user_token").log().all()
+            Response response = given().header("Content-Type","application/json").header("Authorization","Bearer valid_token").log().all()
                     .get("/user");
             response.prettyPrint();
-            Assert.assertEquals(response.statusCode(),200,"response status code is unexpected as"+response.statusCode());
+            Assert.assertEquals(response.statusCode(),200,"response status code is unexpected as"+" " +response.statusCode());
 
         }catch (Exception e){
             System.out.println("Report Dashboard is not reachable : "+e);
@@ -87,7 +87,7 @@ public class Github_API_Automation {
             String requestBody = "{\"bio\": \"Hello\"}";
 
             RestAssured.baseURI="https://api.github.com";
-            Response response = given().header("Content-Type","application/json").header("Authorization","Bearer valid_user_token").body(requestBody).log().all()
+            Response response = given().header("Content-Type","application/json").header("Authorization","Bearer valid_token").body(requestBody).log().all()
                     .patch("/user");
             response.prettyPrint();
             Assert.assertEquals(response.statusCode(),200,"response status code is unexpected as"+response.statusCode());
